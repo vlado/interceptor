@@ -10,16 +10,17 @@ Interceptor methods will be automatically add to ActionController::Base, meaning
 Let's check if the ferret server is running (see acts_as_ferret)
 
   ExampleController < ActionController::Base
-	
+
     def ferret_server_status
       pid = get_pid_from_pid_file("/path/to/ferret/pid/file") # by default path is #{RAILS_ROOT}/log/ferret.pid
-	  if pid and process_running?(pid)
-	    render :text => "Ferret server is running"
-	  else
-	    render :text => "Ferret server is not running"
-	  end	
-	end
+      if pid and process_running?(pid)
+        render :text => "Ferret server is running"
+      else
+        render :text => "Ferret server is not running"
+      end
+    end
+
   end
-	
+
 == TODO
 ...

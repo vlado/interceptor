@@ -3,7 +3,7 @@
 Interceptor is a rails plugin that enables you to check if some process is running and to send signals to that process
 
 == Implementation
-Interceptor methods will be automatically add to ActionController::Base, meaning that you can call them from any of your controllers
+Interceptor methods will be automatically added to ActionController::Base, meaning that you can call them from any of your controllers
 
 == Example
 
@@ -22,11 +22,11 @@ Let's check if the ferret server is running (see acts_as_ferret)
 
   end
 
-== INSTALLATION
+== Installation
 
   $ ruby script/plugin install git://github.com/vlado/interceptor.git
 
-== LICENCE
+== Licence
 
 (The MIT Licence)
 
